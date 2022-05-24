@@ -9,8 +9,8 @@ body{
 /*=======================================================================================*/
 header{
     background-color: #252E38;
-    border-bottom:3px solid #FE3C00;
-    box-shadow: 1px 1px 10px 1px #FE3C00;
+    border-bottom:1px solid #FE3C00;
+    box-shadow: 1px 1px 5px 4px #FE3C00;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -39,27 +39,69 @@ header{
         font-size: 1.35rem;
         text-shadow: 1px 1px 4px #FE3C00;
     }
-    #titulo-navegacion{
-        display: inline;
-        margin: 0 0 0 10px;
+    .item-navegacion a{
+        text-transform: uppercase;
+        color: gray; 
+        font-size: 1.0rem;
+        text-decoration: none;
+        margin: 5px;
     }
-    #titulo-navegacion a{
-        text-transform: uppercase;          /*Mayusculas*/
-        color: gray;                       /*Color del texto*/
-        font-size: 1.0rem;                  /*Tamaño*/
-        text-decoration: none;              /*Sin decoraccion de texto*/
+    .item-navegacion{
+        display: inline-block;
+        position: relative;
     }
-    #titulo-navegacion a:hover{
-        color: #FE3C00; 
-        font-weight: bold;              /*Negrito*/  
-        border-top: 2.5px solid #FE3C00;
-        border-radius: 2.5px;
+    .item-navegacion::after{
+        content: "";
+        width: 100%;
+        height: 2.5px;
+        background-color: #FE3C00;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+        margin-top: -5px;        
+    }
+    .item-navegacion:hover::after{
+        transform: scaleX(1); 
     }
 /*=======================================================================================*/
 .contenedor-vacio-banner{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
+    .mouse{
+        display: flex;
+        width: 25px;
+        height: 50px;
+        border: 2.5px solid #FE3C00;
+        border-radius: 20px;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-bottom: 150px;
+        margin: 0 50% 50px 50%;
+    }
+    .mouse-wheel{
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: auto;
+        animation: mov-wheel 1s linear infinite;
+    }
+    @keyframes mov-wheel{
+        0%{
+            opacity: 0;
+            transform: translateY(-1rem);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(1rem);
+        }
+    }
 .contenedor-principal{
     min-height: 100vh;
     width: 100%;
