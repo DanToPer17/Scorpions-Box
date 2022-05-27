@@ -1,12 +1,91 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url(banner1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    align-content: center;
 }
-/*=======================================================================================*/
+.banner{
+    background-image: url(banner1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+}
+    .mouse {
+        display: flex;
+        width: 25px;
+        height: 50px;
+        border: 2.5px solid #FE3C00;
+        border-radius: 20px;
+        margin: 0 50% 50px 50%;
+        position: absolute;
+        bottom: 0;
+    }
+    .mouse-wheel{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 90%;
+        margin: auto;
+        animation: mov-wheel 1s linear infinite;
+    }
+    @keyframes mov-wheel{
+        0%{
+            opacity: 0;
+            transform: translateY(-5rem);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(1rem);
+        }
+    }
+    .text-typing h1{
+        width: 200px;
+        animation: typing 2s steps(13),blink .5s infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-size: 2rem;
+        
+        margin: 0;
+        position: absolute;
+
+        left: 10%;
+        bottom: 700px;
+    }
+    @keyframes typing{
+        from{
+            width: 0;
+        }
+    }
+    @keyframes blink{
+        50%{
+            border-color: red;
+        }
+    }
+    .titulo-presentacion{
+        display: flex;
+        flex-direction: column;
+        left: 10%;
+        bottom: 450px;
+        position: absolute;
+        font-family: 'Alfa Slab One', sans-serif;
+        font-size: 4rem;
+    }
+        #Nombre-Principal{
+            color: whitesmoke;
+            -webkit-text-stroke: 0.5px #FE3C00;
+        }
+        #apellido-principal{
+            color: #FE3C00;
+            -webkit-text-stroke: 0.5px black;
+        }
+        #apellido-secundario{
+            left: 10%;
+            bottom: 200px;
+            position: absolute;
+        }
 header{
     background-color: #252E38;
     border-bottom:1px solid #FE3C00;
@@ -15,6 +94,7 @@ header{
     z-index: 1000;
     top: 0;
     width: 100%;
+    opacity: 0%;
 }
     .contenedor-cabecera{
         display: flex;
@@ -67,45 +147,20 @@ header{
     .item-navegacion:hover::after{
         transform: scaleX(1); 
     }
-/*=======================================================================================*/
-.contenedor-vacio-banner{
-    width: 100%;
-    height: 90vh;
-}
-    .mouse{
-        display: flex;
-        width: 25px;
-        height: 50px;
-        border: 2.5px solid #FE3C00;
-        border-radius: 20px;
-        margin-left: 50%;
-        margin-right: 50%;
-        margin-bottom: 150px;
-        margin: 0 50% 50px 50%;
+    /*=========================================================*/
+    .contenedor-vacio-banner{
+        width: auto;
+        height: 100vh;
+        padding: 5%;
     }
-    .mouse-wheel{
-        display: block;
-        width: 10px;
-        height: 10px;
-        background-color: #fff;
-        border-radius: 50%;
-        margin: auto;
-        animation: mov-wheel 1s linear infinite;
+    .contenedor-principal{
+        width: 100%;
+        height: 100%;
+        background-color: gray;
     }
-    @keyframes mov-wheel{
-        0%{
-            opacity: 0;
-            transform: translateY(-1rem);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(1rem);
+    @media screen and (max-width: 480px) {
+        .titulo-presentacion{
+            left: 5%;
+            font-size: 3.5rem;
         }
     }
-.contenedor-principal{
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
-    background-color: gray;
-}
-
