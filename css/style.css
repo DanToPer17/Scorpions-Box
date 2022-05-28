@@ -10,7 +10,7 @@ body{
     height: 100vh;
     min-height: 100vh;
     position: relative;
-    color: whitesmoke;
+    color: gainsboro;
 }
     .mouse {
         display: flex;
@@ -85,7 +85,7 @@ body{
             position: absolute;
             font-size: 2.0vw;
         }
-    /*=========================================================*/
+/*=========================================================*/
     @media screen and (max-width: 480px){
         .text-typing h1{
             width: 220px;
@@ -99,3 +99,77 @@ body{
             font-size: 5vw;
         }
     }
+/*=====================MAIN HEADER ====================================*/
+header{
+background-color: #252E38;
+border-bottom:1px solid #FE3C00;
+box-shadow: 1px 1px 5px 4px #FE3C00;
+position: fixed;
+z-index: 1000;
+top: 0;
+width: 100%;
+opacity: 0%;
+}
+    .contenedor-cabecera{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 980px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .contenedor-logotipo{
+        display: flex;
+        align-items: center;
+    }
+    .img-logo{
+        width: 110px;
+    }
+    .titulo{
+        font-family: 'Alfa Slab One', sans-serif;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 1.35rem;
+        text-shadow: 1px 1px 4px #FE3C00;
+    }
+    .item-navegacion a{
+        text-transform: uppercase;
+        color: gray; 
+        font-size: 1.0rem;
+        text-decoration: none;
+        margin: 5px;
+    }
+    .item-navegacion{
+        display: inline-block;
+        position: relative;
+    }
+    .item-navegacion::after{
+        content: "";
+        width: 100%;
+        height: 2.5px;
+        background-color: #FE3C00;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+        margin-top: -5px;        
+    }
+    .item-navegacion:hover::after{
+        transform: scaleX(1); 
+    }
+/*=========================================================*/
+.contenedor-vacio-banner{
+    width: auto;
+    height: 100vh;
+    padding: 5%;
+}
+.contenedor-principal2{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+    
