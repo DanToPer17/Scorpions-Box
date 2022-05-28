@@ -3,13 +3,14 @@ body{
 }
 .banner{
     background-image: url(banner1.jpg);
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    color: #fff;
+    background-position: center;    
     height: 100vh;
     min-height: 100vh;
     position: relative;
+    color: whitesmoke;
 }
     .mouse {
         display: flex;
@@ -17,9 +18,9 @@ body{
         height: 50px;
         border: 2.5px solid #FE3C00;
         border-radius: 20px;
-        margin: 0 50% 50px 50%;
+        margin: 0 50% 0px 50%;
         position: absolute;
-        bottom: 0;
+        bottom: 80px;
     }
     .mouse-wheel{
         display: block;
@@ -41,18 +42,15 @@ body{
         }
     }
     .text-typing h1{
-        width: 200px;
-        animation: typing 2s steps(13),blink .5s infinite alternate;
+        width: 320px;
+        animation: typing 1.5s steps(20),blink .5s infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
-        font-size: 2rem;
-        
-        margin: 0;
-        position: absolute;
-
+        font-size: 2.5rem;
+        position: absolute;       
+        top: 100px;
         left: 10%;
-        bottom: 700px;
     }
     @keyframes typing{
         from{
@@ -64,16 +62,16 @@ body{
             border-color: red;
         }
     }
-    .titulo-presentacion{
+    .nombre-organizacion{
         display: flex;
         flex-direction: column;
         left: 10%;
-        bottom: 450px;
+        top: 350px;
         position: absolute;
         font-family: 'Alfa Slab One', sans-serif;
-        font-size: 4rem;
+        font-size: 5.5vw;
     }
-        #Nombre-Principal{
+        #nombre-Principal{
             color: whitesmoke;
             -webkit-text-stroke: 0.5px #FE3C00;
         }
@@ -85,12 +83,19 @@ body{
             left: 10%;
             bottom: 200px;
             position: absolute;
+            font-size: 2.0vw;
         }
-
     /*=========================================================*/
-    @media screen and (max-width: 480px) {
-        .titulo-presentacion{
-            left: 5%;
-            font-size: 3.5rem;
+    @media screen and (max-width: 480px){
+        .text-typing h1{
+            width: 220px;
+            animation: typing 1.5s steps(13),blink .5s infinite alternate;
+            font-size: 2rem;
+        }
+        .nombre-organizacion{
+            font-size: 13vw;
+        }
+        #apellido-secundario{
+            font-size: 5vw;
         }
     }
