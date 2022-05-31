@@ -4,16 +4,19 @@ var scrollVertical = window.pageYOffset;
 
 document.addEventListener("scroll", function()  {
 
-    var scrollVerticalOriginal = window.pageYOffset;
-    console.log("Dimensión Original: " + scrollVerticalOriginal);
+    var scrollVertical = window.pageYOffset/1000;
 
-    var scrollVertical = window.pageYOffset/600;
-    console.log("Dimensión Modificada: " + scrollVertical);
-
-    var b = String(scrollVertical);
-    console.log("Numero a colocar: " + b);
-
-    if( scrollVerticalOriginal < 600){
-        cabecera.style.opacity = b;    
+    if(scrollVertical < 0.5){
+        cabecera.style.opacity = 0;
+    }else if(scrollVertical > 0.5 && scrollVertical < 0.6){
+        scrollVertical = scrollVertical - 0.4;
+        cabecera.style.opacity = scrollVertical;
+    }else if(scrollVertical > 0.6 && scrollVertical < 0.65){
+        scrollVertical = scrollVertical - 0.1;
+        cabecera.style.opacity = scrollVertical;
+    }else if(scrollVertical > 0.65){
+        scrollVertical = scrollVertical;
+        cabecera.style.opacity = scrollVertical;
     }
+
 });
