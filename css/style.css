@@ -11,6 +11,7 @@ body{
     min-height: 100vh;
     position: relative;
     color: gainsboro;
+    display: flex;
 }
     .mouse {
         display: flex;
@@ -42,12 +43,12 @@ body{
         }
     }
     .text-typing h1{
-        width: 320px;
+        width: 390px;
         animation: typing 1.5s steps(20),blink .5s infinite alternate;
         white-space: nowrap;
         overflow: hidden;
-        border-right: 3px solid;
-        font-size: 2.5rem;
+        border-right: 5px solid;
+        font-size: clamp(2.44rem, 2.38vw + 1.58rem, 3.75rem);
         position: absolute;       
         top: 100px;
         left: 10%;
@@ -66,7 +67,7 @@ body{
         display: flex;
         flex-direction: column;
         left: 10%;
-        top: 350px;
+        top: 50%;
         position: absolute;
         font-family: 'Alfa Slab One', sans-serif;
         font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
@@ -80,19 +81,28 @@ body{
             -webkit-text-stroke: 0.5px black;
         }   
         #apellido-secundario{
-            left: 10%;
-            bottom: 200px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+        }
+        .logo-banner{
             position: absolute;
-            font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);            
+            right: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            animation: difuminar 5s;
+            width:  calc(45% - 1rem);
+            place-items: center;
         }
-/*=========================================================*/
-    @media screen and (max-width: 480px){
-        .text-typing h1{
-            width: 220px;
-            animation: typing 1.5s steps(13),blink .5s infinite alternate;
-            font-size: 2rem;
-        }
-    }
+            @keyframes difuminar {
+                from {opacity: 0}
+                to {opacity: 1}
+            }
+            .img-logo-banner{
+                width: 70%;
+                height: auto;
+            }
+
 /*=====================MAIN HEADER ====================================*/
 header{
 background-color: #252E38;
@@ -162,6 +172,7 @@ opacity: 0%;
     .item-navegacion:hover::after{
         transform: scaleX(1); 
     }
+
 /*=========================================================*/
 .contenedor-vacio-banner{
     width: auto;
@@ -175,12 +186,42 @@ opacity: 0%;
     height: 3500px;
 }
  /*=========================================================*/
-
+/*=========================================================*/
+@media screen and (max-width: 480px){
+    .text-typing h1{
+        width: 270px;
+    }
+    .logo-banner{
+        display: inline-block;
+        left: 0;
+        top: 18%;
+        width: 85%;
+        margin: 0;
+    }
+}
 @media screen and (max-width: 800px){
+    .text-typing h1{
+        width: 290px;
+    }
     .boton-menu-bar{
         display: flex;
     }
     .lista-navegacion{
         display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 79px;
+        left: 0px;
+        width: 100%;
+        background: #252E38;
+        animation: difuminar 0.5s;
+    }
+        @keyframes difuminar {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+    .item-navegacion{
+        margin: 3%;
     }
 }

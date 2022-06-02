@@ -1,8 +1,5 @@
 var cabecera = document.querySelector(".contenedor-principal");
-var scrollVertical = window.pageYOffset;
-/*=========================================================*/
-
-document.addEventListener("scroll", function()  {
+document.addEventListener("scroll", function(){
 
     var scrollVertical = window.pageYOffset/1000;
 
@@ -18,5 +15,19 @@ document.addEventListener("scroll", function()  {
         scrollVertical = scrollVertical;
         cabecera.style.opacity = scrollVertical;
     }
+});
 
+var estatus = false;
+var menutoggler = document.querySelector(".fas");
+var listaNavegacion = document.querySelector(".lista-navegacion");
+menutoggler.addEventListener("click", function(event){
+    event.preventDefault();
+    
+    if(estatus == false){
+        estatus = true;
+        listaNavegacion.style.display = "flex";
+    }else{
+        estatus = false;
+        listaNavegacion.style.display = "none";
+    }
 });
