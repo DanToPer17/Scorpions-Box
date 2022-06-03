@@ -2,7 +2,8 @@ var cabecera = document.querySelector(".contenedor-principal");
 document.addEventListener("scroll", function(){
 
     var scrollVertical = window.pageYOffset/1000;
-
+    /*listaNavegacion.classList.add("ocultar-lista-navegacion-resposive");*/
+    
     if(scrollVertical < 0.5){
         cabecera.style.opacity = 0;
     }else if(scrollVertical > 0.5 && scrollVertical < 0.6){
@@ -15,6 +16,8 @@ document.addEventListener("scroll", function(){
         scrollVertical = scrollVertical;
         cabecera.style.opacity = scrollVertical;
     }
+    listaNavegacion.style.display = "none";
+    //listaNavegacion.style.animation = "mynewmove 4s 2";
 });
 
 var estatus = false;
@@ -31,3 +34,4 @@ menutoggler.addEventListener("click", function(event){
         listaNavegacion.style.display = "none";
     }
 });
+
