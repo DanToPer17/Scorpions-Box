@@ -6,7 +6,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     height: 100vh;
     min-height: 100vh;
     position: relative;
@@ -223,9 +223,7 @@ opacity: 0%;
             0%   {top: 79px; left: 400px; background: #FE3C00; width: 0%;}
             100% {top: 79px; background: #252E38; width: 100%;}
         }
-   
     .item-navegacion{
         margin: 3%;
     }
-
 }
