@@ -6,6 +6,7 @@
     <title>Scorpion's Box</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
     <link rel="icon" href="img/icon-scorpions-box.ico" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +17,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
     <div class="banner">
-        <span class="mouse">
-            <span class="mouse-wheel"></span>
-        </span>
+            <a class="mouse" href="#Nosotros">
+                <span class="mouse-wheel"></span>
+            </a>
         <div class="text-typing">
             <h1>Bienvenidos</h1>
         </div>
@@ -48,8 +53,8 @@
                     </div>
                     <ul class="lista-navegacion">
                         <li class="item-navegacion"><a href="#">Home</a></li>
-                        <li class="item-navegacion"><a href="#">Nosotros</a></li>
-                        <li class="item-navegacion"><a href="#">Entrenadores</a></li>
+                        <li class="item-navegacion"><a href="#Nosotros">Nosotros</a></li>
+                        <li class="item-navegacion"><a href="#Entrenadores">Entrenadores</a></li>
                         <li class="item-navegacion"><a href="#">Horarios</a></li>
                         <li class="item-navegacion"><a href="#">Contacto</a></li>
                     </ul>
@@ -57,16 +62,27 @@
             </div>
         </header>
         <main>
-            <div class="contenedor-vacio-banner">
-                <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <section class="contenedor-nosotros" id="Nosotros">
+                <div>
+                    <h1 class="nosotros-head-1">Entrenamiento</h1><br>
+                </div>
+                <div>
+                    <h1 class="nosotros-head-2">Para Todos</h1><br>
+                </div>
+                <div class="elemento-divisor"></div>
+                <h1 class="descripcion">
+                    Scorpion's Box es familia, es un espacio de dispersión, diversion y entrenamiento fitness enfocado en el entrenamineto funcional de forma innovadora,
+                    diseñado para aquellos dispuestos a entrenar duro y divertirse para lograr sus objetivos y salir de la rutina capitalina.
+                    Cuenta con excelentes trainers con gran experiencia y manejo de clases grupales.
                 </h1>
-            </div>    
-            <div class="contenedor-principal2"></div>
+                    <figure>
+                        <img class="personalizadas" src="img/personalizadas-3.jpeg" alt="Clases Personalizadas">
+                    </figure>
+                    <figure>
+                    </figure>
+            </section>
+            <section class="contenedor-entrenadores" id="Entrenadores">
+            </section>
         </main>
         <script src="js/index.js"></script>
     </body>

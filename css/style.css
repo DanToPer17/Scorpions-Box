@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,6 +25,7 @@ body{
         margin: 0 50% 0 47%;
         position: absolute;
         bottom: 80px;
+        cursor: pointer;
     }
     .mouse-wheel{
         display: block;
@@ -102,7 +106,6 @@ body{
                 width: 70%;
                 height: auto;
             }
-
 /*=====================MAIN HEADER ====================================*/
 header{
 background-color: #252E38;
@@ -172,58 +175,55 @@ opacity: 0%;
     .item-navegacion:hover::after{
         transform: scaleX(1); 
     }
-
 /*=========================================================*/
-.contenedor-vacio-banner{
+.contenedor-nosotros{
+    display: flex;
+    flex-direction: column;
     width: auto;
-    height: 100vh;
-    padding: 5%;
+    padding: 180px 10% 0px 10%;
+    height: 85vh;
 }
-.contenedor-principal2{
-    width: 100%;
-    height: 100%;
-    background-color: gray;
-    height: 3500px;
-}
-/*=========================================================*/
-@media screen and (max-width: 480px){
-    .text-typing h1{
-        width: 270px;
-    }
-    .logo-banner{
-        display: inline-block;
-        left: 0;
-        top: 18%;
-        width: 85%;
-        margin: 0;
-    }
-}
-@media screen and (max-width: 800px){
-    .text-typing h1{
-        width: 290px;
-    }
-    .boton-menu-bar{
+    .nosotros-head-1{
+        font-family: 'Raleway', sans-serif;
         display: flex;
+        font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);  
+        text-transform: uppercase;
+        letter-spacing: 10px;
     }
-    .lista-navegacion{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 79px;
-        left: 0px;
-        width: 100%;
-        background: #252E38;
-        animation: visualizar 0.5s;
-        border-radius: 0 0 10px 10px;
+    .nosotros-head-2{
+        display: flex;
+        text-transform: uppercase;
+        font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+        letter-spacing: 2px;
+        color: #FE3C00;
+        font-weight: 900;
     }
-        @keyframes visualizar {
-            from {opacity: 0}
-            to {opacity: 1}
-            0%   {top: 79px; left: 400px; background: #FE3C00; width: 0%;}
-            100% {top: 79px; background: #252E38; width: 100%;}
-        }
-    .item-navegacion{
-        margin: 3%;
+    .elemento-divisor{
+        border-bottom: #FE3C00;
+        border-style: solid;
+        width: 250px;
+        margin:10px 0px 20px -5%;
+        border-radius: 3px;
     }
+    .descripcion{
+        font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem); 
+    }
+    .personalizadas{
+        width: 60%;
+        filter: grayscale(80%);
+        filter: saturate(0%);
+        transition:all .5s ease-in-out;
+        padding: 50px;
+    }
+    .personalizadas:hover{
+        filter: grayscale(0%);
+        filter: saturate(120%);
+    }
+.contenedor-entrenadores{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 180px 10% 0px 10%;
+    height: 85vh;
+    background: gray;
 }
