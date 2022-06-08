@@ -7,7 +7,7 @@ document.addEventListener("scroll", function(event){
     event.preventDefault();
 
     var scrollVertical = window.pageYOffset/1000;
-    console.log(scrollVertical);
+
     if(scrollVertical < 0.5){
         cabecera.style.opacity = 0;
     }
@@ -35,5 +35,19 @@ menutoggler.addEventListener("click", function(event){
     }else{
         estatus = false;
         listaNavegacion.style.display = "none";
+    }
+});
+
+
+var nosotrosHead1 = document.querySelector(".nosotros-head-1");
+
+document.addEventListener("scroll", function(event){
+    var scrollVertical = window.pageYOffset/1000;
+
+    if(scrollVertical >= 0.6){
+        nosotrosHead1.style.visibility = "";;
+        nosotrosHead1.style.animation = "mymove 4s";
+    }else{
+        nosotrosHead1.style.visibility = "hidden";
     }
 });

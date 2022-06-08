@@ -180,16 +180,22 @@ opacity: 0%;
     display: flex;
     flex-direction: column;
     width: auto;
-    padding: 180px 10% 0px 10%;
-    height: 85vh;
+    padding: 150px 10% 0px 10%;
+    height: 90vh;
 }
     .nosotros-head-1{
         font-family: 'Raleway', sans-serif;
         display: flex;
+        position: relative;
         font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);  
         text-transform: uppercase;
         letter-spacing: 10px;
+        animation-name: none;
     }
+        @keyframes mymove {
+            from {left: -300px;}
+            to {left: 0.2%;}
+          }
     .nosotros-head-2{
         display: flex;
         text-transform: uppercase;
@@ -209,7 +215,7 @@ opacity: 0%;
         font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem); 
     }
     .personalizadas{
-        width: 60%;
+        width: 40%;
         filter: grayscale(80%);
         filter: saturate(0%);
         transition:all .5s ease-in-out;
@@ -222,8 +228,71 @@ opacity: 0%;
 .contenedor-entrenadores{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     width: auto;
-    padding: 180px 10% 0px 10%;
-    height: 85vh;
+    padding: 150px 10% 0px 10%;
+    height: 90vh;
     background: gray;
+}
+    .entrenadores-head-1{
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        position: relative;
+        font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);  
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        animation-name: none;
+    }
+        @keyframes mymove {
+            from {left: -300px;}
+            to {left: 0.2%;}
+        }
+    .entrenadores-head-2{
+        display: flex;
+        text-transform: uppercase;
+        font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+        letter-spacing: 2px;
+        color: white;
+        font-weight: 900;
+    }
+.contenedor-horarios{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 150px 10% 0px 10%;
+    height: 90vh;
+    background: orangered;
+}
+    .horarios-head-1{
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        position: relative;
+        font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);  
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        animation-name: none;
+    }
+    .horarios-head-2{
+        display: flex;
+        text-transform: uppercase;
+        font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+        letter-spacing: 2px;
+        color: white;
+        font-weight: 900;
+    }
+    .elemento-divisor-horarios{
+        border-bottom: #252E38;
+        border-style: solid;
+        width: 250px;
+        margin:10px 0px 20px -5%;
+        border-radius: 3px;
+    }
+.contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+    padding: 150px 10% 0px 10%;
+    height: 90vh;
+    background: black;
 }
