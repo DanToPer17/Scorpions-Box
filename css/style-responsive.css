@@ -1,18 +1,14 @@
 @media screen and (max-width: 480px){
+    .nombre-organizacion{
+        justify-content: space-evenly;
+    }
+    
     .text-typing h1{
         width: 270px;
     }
     .logo-banner{
-        display: inline-block;
-        left: 0;
-        top: 18%;
-        width: 85%;
-        margin: 0;
-    }
-    .personalizadas{
-        width: 100%;
-        padding-top: 20px;
-        padding: 5px;
+        position: absolute;
+        width: 60%;
     }
 }
 @media screen and (max-width: 800px){
