@@ -15,8 +15,8 @@
         flex-direction: column;
         font-family: 'Alfa Slab One', sans-serif;
         font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
-        height: 100vh;
-        justify-content: space-around;
+        height: 80vh;
+        justify-content: space-evenly;
         min-height: 100vh;
         padding: 10px 5% 10px;
         position: absolute;
@@ -96,6 +96,9 @@
     }
     .text-typing h1{
         width: 270px;
+    }
+    .scroll{
+        bottom: 18.5%;
     }
     .scroll__desplazamiento{
         margin-left: 95%;
