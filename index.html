@@ -5,8 +5,11 @@
     <meta name="viewport" content="width = device-width">
     <title>Scorpion's Box</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/BarraNavegacion.css">
+    <link rel="stylesheet" href="css/Banner.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/entrenadores.css">
     <link rel="icon" href="img/icon-scorpions-box.ico" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,46 +27,46 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
     <body>
-        <header class="contenedor-principal" id="Navegacion">
-            <div class="contenedor-navegacion">
-                <div class="contenedor-logotipo">
-                    <img class="img-logo" src="img/logo-scorpions-box.png" alt="Logo Scorpions Box">
-                    <h1 class="titulo" id="nombre-Principal">Scorpion's</h1>
-                    <h1 class="titulo" id="apellido-principal">Box</h1>
+        <header class="contenedor__principal__navegacion" id="Navegacion">
+            <div class="barraNavegacion">
+                <div class="barraNavegacion__logotipo">
+                    <img class="img__logo" src="img/logo-scorpions-box.png" alt="Logo Scorpions Box">
+                    <h1 class="titulo_logo" id="nombre-Principal">Scorpion's</h1>
+                    <h1 class="titulo_logo" id="apellido-principal">Box</h1>
                 </div>
-                <div class="menu-navegacion">
-                    <div class="boton-menu-bar">
+                <div class="barraNavegacion__menu">
+                    <div class="barraNavegacion__menu__boton">
                         <i class="fas fa-bars"></i>
                     </div>
-                    <ul class="lista-navegacion">
-                        <li class="item-navegacion"><a href="#">Home</a></li>
-                        <li class="item-navegacion"><a href="#Nosotros">Nosotros</a></li>
-                        <li class="item-navegacion"><a href="#Entrenadores">Entrenadores</a></li>
-                        <li class="item-navegacion"><a href="#Horarios">Horarios</a></li>
-                        <li class="item-navegacion"><a href="#Contacto">Contacto</a></li>
+                    <ul class="barraNavegacion__menu__lista">
+                        <li class="barraNavegacion__menu__item"><a href="#">Home</a></li>
+                        <li class="barraNavegacion__menu__item"><a href="#Nosotros">Nosotros</a></li>
+                        <li class="barraNavegacion__menu__item"><a href="#Entrenadores">Entrenadores</a></li>
+                        <li class="barraNavegacion__menu__item"><a href="#Horarios">Horarios</a></li>
+                        <li class="barraNavegacion__menu__item"><a href="#Contacto">Contacto</a></li>
                     </ul>
                 </div>        
             </div>
         </header>
         <main>
-            <section class="contenedor-banner-principal" id="Banner">
-                <div class="nombre-organizacion">
-                    <div class="nombre-organizacion">
-                        <div class="text-typing">
-                            <h1>Bienvenidos</h1>
-                        </div>
-                        <div>
-                            <h1 id="nombre-Principal">Scorpion's</h1>
-                            <h2 id="apellido-principal">Box</h2>
-                        </div>
-                        <div>
-                            <h3 id="apellido-secundario">Entrenamiento Funcional</h3>
-                        </div>
+            <section class="contenedor__principal__banner" id="Banner">
+                <div class="banner__nombre__organizacion">
+                    <div class="text-typing">
+                        <h1>Bienvenidos</h1>
+                    </div>
+                    <div>
+                        <h1 id="nombre-Principal">Scorpion's</h1>
+                        <h2 id="apellido-principal">Box</h2>
+                    </div>
+                    <div>
+                        <h3 id="apellido-secundario">Entrenamiento Funcional</h3>
                     </div>
                 </div>
-                <a class="mouse" href="#Nosotros">
-                    <span class="mouse-wheel"></span>
-                </a>
+                <div class="scroll">
+                    <a class="scroll__desplazamiento" href="#Nosotros">
+                        <img src="https://assets.website-files.com/5fa03132b22f4344d3d93ce6/62b95183c338e080d47387e7_animation_500_l4wdht6s.gif">
+                    </a>
+                </div>
                 <div class="logo-banner">
                     <img class="img-logo-banner" src="img/logo-scorpions-box.png" alt="Logo Scorpions Box">
                 </div>
@@ -91,11 +94,13 @@
             <section class="contenedor-entrenadores" id="Entrenadores">
                 <div>
                     <h1 class="titulo-principal-1-2">Nuestro equipo</h1><br>
-                </div>
-                <div>
-                    <h1 class="titulo-principal-2-2">Entrenadores</h1>
+                    <h1 class="titulo-principal-2-2">Entrenadores</h1> 
                 </div>
                 <div class="elemento-divisor"></div>
+                <div class="">
+                    <img src="img/FreddyCoach.png" alt="Coach-Freddy">
+                    <img src="img/CamiloCoach.png" alt="Coach-Camilo">
+                </div>
             </section>
             <section class="contenedor-horarios" id="Horarios">
                 <div>

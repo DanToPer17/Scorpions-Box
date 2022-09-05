@@ -1,0 +1,109 @@
+.contenedor__principal__banner{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh + 100px);
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+}
+    .banner__nombre__organizacion{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Alfa Slab One', sans-serif;
+        font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+        height: 100vh;
+        justify-content: space-around;
+        min-height: 100vh;
+        padding: 10px 5% 10px;
+        position: absolute;
+        width: auto;
+    }
+        .text-typing h1{
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            width: 390px;
+            animation: typing 1.5s steps(20),blink .5s infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 5px solid;
+            font-size: clamp(2.44rem, 2.38vw + 1.58rem, 3.75rem);
+            position: absolute;
+            display: flex;
+        }
+        @keyframes typing{
+            from{
+                width: 0;
+            }
+        }
+        @keyframes blink{
+            50%{
+                border-color: #FE3C00;
+            }
+        }
+
+        #nombre-Principal{
+            color: #fff;
+            -webkit-text-stroke: 0.5px #FE3C00;
+        }
+        #apellido-principal{
+            color: #FE3C00;
+            -webkit-text-stroke: 0.5px black;
+        }   
+        #apellido-secundario{
+            color: gray;
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+        }
+    .scroll{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        bottom: 12.5%;
+    }
+    .scroll__desplazamiento{
+        margin-left: 80%;
+        margin-right: 60%;
+        width: 25%;
+    }
+    .logo-banner{
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        animation: difuminar 5s;
+        width:  calc(45% - 1rem);
+        place-items: center;
+    }
+        @keyframes difuminar {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+        .img-logo-banner{
+            width: 70%;
+            height: auto;
+        }
+
+@media screen and (max-width: 480px){
+    .nombre-organizacion{
+        justify-content: space-evenly;
+    }
+    .text-typing h1{
+        width: 270px;
+    }
+    .scroll__desplazamiento{
+        margin-left: 95%;
+        margin-right: 60%;
+        width: 50%;
+    }
+    .logo-banner{
+        position: absolute;
+        width: 60%;
+    }
+}

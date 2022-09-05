@@ -1,6 +1,6 @@
 
+var barraNavegacion = document.querySelector(".contenedor__principal__navegacion");
 var contenedorNosotros = document.querySelector(".contenedor-nosotros");
-var barraNavegacion = document.querySelector(".contenedor-principal");
 
 document.addEventListener("scroll", function(){
     var distanciaContenedorNosotros = contenedorNosotros.getBoundingClientRect().top
@@ -10,7 +10,7 @@ document.addEventListener("scroll", function(){
 //===================- RUTINA VISUALIZACIÓN MENU RESPONSIVE -======================
 var estatus = false;
 var menutoggler = document.querySelector(".fas");
-var listaNavegacion = document.querySelector(".lista-navegacion");
+var listaNavegacion = document.querySelector(".barraNavegacion__menu__lista");
 
 menutoggler.addEventListener("click", function(){
     if(estatus == false){
