@@ -52,6 +52,9 @@
 
     @media screen and (max-width: 800px){
         .nosotros {
+            display: flex;
+            width: 100%;
             flex-direction: column;
             align-items: center;
+        }
     }
