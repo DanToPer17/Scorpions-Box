@@ -1,0 +1,34 @@
+.contenedor-nosotros{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 125px 10% 0px 10%;
+    background-color: #FFF;
+    height: calc(90vh);
+    clip-path: polygon(0% 75px, 100% 0px, 100% 100%, 0% 100%);
+    margin-top: -90px;
+}
+    .titulo-principal-1-1{
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        position: relative;
+        font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem); 
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight:  bolder;
+    }
+    .titulo-principal-2-1{
+        display: flex;
+        text-transform: uppercase;
+        font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+        letter-spacing: 2px;
+        color: #FE3C00;
+        font-weight: 900;
+    }
+    .elemento-divisor{
+        border-bottom: #FE3C00;
+        border-style: solid;
+        width: 250px;
+        margin:10px 0px 20px -5%;
+        border-radius: 3px;
+    }
