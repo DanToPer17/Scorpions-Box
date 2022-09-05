@@ -65,6 +65,7 @@
         position: absolute;
         width: 100%;
         bottom: 12.5%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0); 
     }
     .scroll__desplazamiento{
         margin-left: 80%;
