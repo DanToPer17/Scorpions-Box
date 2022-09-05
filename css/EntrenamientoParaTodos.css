@@ -3,7 +3,7 @@
     flex-direction: column;
     width: auto;
     padding: 125px 10% 0px 10%;
-    background-color: #FFF;
+    background-image: radial-gradient(circle at 67.22% 53.04%, #f8fffb 0, #ecefec 25%, #dcdadc 50%, #ccc5cd 75%, #bdb4c1 100%);
     height: calc(90vh);
     clip-path: polygon(0% 75px, 100% 0px, 100% 100%, 0% 100%);
     margin-top: -90px;
@@ -31,4 +31,27 @@
         width: 250px;
         margin:10px 0px 20px -5%;
         border-radius: 3px;
+    }
+
+.nosotros{
+    display: flex;
+    width: 100%;
+}
+    .nosotros__descripcion{
+        line-height: 180%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 5%;
+        text-align: justify        
+    }
+    .nosotros__imagen{
+        width: 100%;
+    }
+
+    @media screen and (max-width: 800px){
+        .nosotros {
+            flex-direction: column;
+            align-items: center;
     }
