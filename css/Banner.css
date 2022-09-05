@@ -107,7 +107,12 @@
         width: 50%;
     }
     .logo-banner{
-        position: absolute;
-        width: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .img-logo-banner{
+        width: 40%;
     }
 }
