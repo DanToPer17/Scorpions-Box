@@ -5,22 +5,6 @@ var contenedorNosotros = document.querySelector(".contenedor-nosotros");
 document.addEventListener("scroll", function(){
     var distanciaContenedorNosotros = contenedorNosotros.getBoundingClientRect().top
     visualizarBarraNavegacion(distanciaContenedorNosotros);
-    activarAnimacion(distanciaContenedorNosotros);
-});
-//===================- RUTINA VISUALIZACIÓN MENU RESPONSIVE -======================
-var estatus = false;
-var menutoggler = document.querySelector(".fas");
-var listaNavegacion = document.querySelector(".barraNavegacion__menu__lista");
-
-menutoggler.addEventListener("click", function(){
-    if(estatus == false){
-        estatus = true;
-        listaNavegacion.style.display = "flex";
-    }
-    document.addEventListener("scroll", function(){
-        estatus = false;
-        listaNavegacion.style.display = "none";
-    });
 });
 //===================- RUTINA VISUALIZACIÓN BARRA DE NAVEGACIÓN -===================
 function visualizarBarraNavegacion(visualBarNavegacion){
@@ -43,26 +27,20 @@ function visualizarBarraNavegacion(visualBarNavegacion){
                                 barraNavegacion.style.visibility = "";
                                 }
 }
-//===================- RUTINA VISUALIZACIÓN DINAMICA SCROLL -=======================
 
-var tituloPrimarioNosotros = document.querySelector(".titulo-principal-1-1");
-var tituloPrimarioEntrenadores = document.querySelector(".titulo-principal-1-2");
-var tituloPrimarioHorarios = document.querySelector(".titulo-principal-1-3");
-var tituloPrimarioContacto = document.querySelector(".titulo-principal-1-4");
+//===================- RUTINA VISUALIZACIÓN MENU RESPONSIVE -======================
+var estatus = false;
+var menutoggler = document.querySelector(".fas");
+var listaNavegacion = document.querySelector(".barraNavegacion__menu__lista");
 
-function activarAnimacion(distanciaContenedorNosotros){
-    tituloPrimarioNosotros.classList.remove("animacion-izquierda");
-    tituloPrimarioHorarios.classList.remove("animacion-izquierda");
-    tituloPrimarioEntrenadores.classList.remove("animacion-derecha");
-    tituloPrimarioContacto.classList.remove("animacion-derecha");
+menutoggler.addEventListener("click", function(){
+    if(estatus == false){
+        estatus = true;
+        listaNavegacion.style.display = "flex";
+    }
+    document.addEventListener("scroll", function(){
+        estatus = false;
+        listaNavegacion.style.display = "none";
+    });
+});
 
-    if(distanciaContenedorNosotros <= 700){
-        tituloPrimarioNosotros.classList.add("animacion-izquierda");
-        }if(distanciaContenedorNosotros <= -900){
-            tituloPrimarioHorarios.classList.add("animacion-izquierda");
-            }if(distanciaContenedorNosotros <= -200){
-                tituloPrimarioEntrenadores.classList.add("animacion-derecha");
-                }if(distanciaContenedorNosotros <= -1680){
-                    tituloPrimarioContacto.classList.add("animacion-derecha");
-                    }
-}
