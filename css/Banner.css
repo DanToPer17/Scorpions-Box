@@ -24,7 +24,7 @@
     }
         .text-typing h1{
             font-family: 'Montserrat', sans-serif;
-            color: #fff;
+            color: #FFFFFF;
             width: 390px;
             animation: typing 1.5s steps(20),blink .5s infinite alternate;
             white-space: nowrap;
@@ -46,7 +46,7 @@
         }
 
         #nombre-Principal{
-            color: #fff;
+            color: #FFFFFF;
             -webkit-text-stroke: 0.5px #FE3C00;
         }
         #apellido-principal{
