@@ -59,18 +59,14 @@
             font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
         }
     .scroll{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        width: 100%;
         bottom: 12.5%;
-        -webkit-tap-highlight-color: rgba(0,0,0,0); 
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
     }
-    .scroll__desplazamiento{
-        margin-left: 80%;
-        margin-right: 60%;
-        width: 25%;
+    .scroll__desplazamiento img{
+        width: 85px
     }
     .logo-banner{
         position: absolute;
@@ -97,14 +93,6 @@
     }
     .text-typing h1{
         width: 270px;
-    }
-    .scroll{
-        bottom: 18.5%;
-    }
-    .scroll__desplazamiento{
-        margin-left: 95%;
-        margin-right: 60%;
-        width: 50%;
     }
     .logo-banner{
         width: 100%;

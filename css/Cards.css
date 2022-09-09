@@ -93,6 +93,19 @@
       filter: grayscale(0%);
     }
 
+
+    .card__descripcion{
+      display: flex;
+      background: #FE3C00;
+
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+      color: #FFFFFF;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      z-index:100;
+    }
+
 @media screen and (max-width: 800px){
   .contenedor__cards{
     height: auto;
@@ -126,11 +139,5 @@
 }
     
 /*
-    .card__item{
-      width: 50%;
-      background: #FE3C00;
-      height: 25%;
-      clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-      color: #FFFFFF;
-    }
+
 */
