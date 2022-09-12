@@ -67,8 +67,7 @@
     }
     .scroll__desplazamiento img{
         width: 85px;
-        position: absolute;
-        bottom: 20;
+        position: initial;
     }
     .logo-banner{
         position: absolute;
