@@ -1,0 +1,38 @@
+.contenedor-horarios{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 125px 10% 0px 10%;
+    height: 90vh;
+    background: linear-gradient(to bottom, #fe3c00, #000000);
+}
+.titulo__horarios__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+    .titulo__principal__3-1{
+        font-family: 'Raleway', sans-serif;
+        font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem); 
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: bold;
+        color: #191919;
+    }
+    .titulo__principal__3-2{
+        text-transform: uppercase;
+        font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        font-weight: 900;
+    }
+    #Horarios .elemento-divisor{
+        border-bottom: #191919;
+        border-radius: 3px;
+        border-style: solid;
+        left: -70px;
+        padding-top: 15px;
+        position: relative;
+        width: 270px;
+    }
