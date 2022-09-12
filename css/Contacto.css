@@ -1,0 +1,38 @@
+.contenedor__contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 125px 10% 0px 10%;
+    background: black;
+    height: 90vh;
+    overflow:hidden;
+}
+    .titulo__contacto__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+    }
+        .titulo__principal__4-1{
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem); 
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-weight: bold;
+            color: gray;
+        }
+        .titulo__principal__4-2{
+            text-transform: uppercase;
+            font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            font-weight: 900;
+        }
+        #Contacto .elemento-divisor{
+            border-bottom: #FE3C00;
+            border-radius: 3px;
+            border-style: solid;
+            padding-top: 15px;
+            position: relative;
+            width: 270px;
+            right: -70px
+        }
