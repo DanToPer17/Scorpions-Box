@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 125px 10% 0px 10%;
     background: #202122;
-    height: 90vh;
+    height: auto;
     overflow:hidden;
 }
 .titulo__contacto__contenedor{
@@ -39,16 +39,61 @@
 .contacto{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2.5% 5%;
 }
-    .contacto h1{
-    color: #FFFFFF;
-    display: flex;
-    font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-    margin-bottom: 50px;
-    text-align: center;
+    .contacto__descripcion{
+        color: gray;
+        display: flex;
+        font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+        margin: 50px 0;
+        text-align: center;
+        justify-content: center;
     }
+    .contacto__contenido{
+        display: flex;
+        width: 100%;
+    }
+    .contacto__contenido__empresa{
+        color: #FFFFFF;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly
+    }
+    .contacto__contenido__empresa__superior{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+        .contacto__contenido__empresa__superior__logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 25%;
+        }
+            .contacto__contenido__empresa__superior__logo img{
+                width: 70%;
+            }
+        .contacto__contenido__empresa__superior__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+            .contacto__contenido__empresa__superior__info div{
+                display: flex;
+            }
+                .contacto__contenido__empresa__superior__info div i{
+                    margin-right: 15px;
+                }
+                    .contacto__contenido__empresa__superior div i::before{
+                        color: #FE3C00;
+                    }
+                .contacto__contenido__empresa__superior__info div a{
+                    margin-right: 5px;
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
+
 .formulario__entrada{
     display: flex;
     flex-direction: column;
@@ -62,4 +107,33 @@
     border: none;
     border-bottom: 3px solid #FE3C00;
     border-radius: 0;
+}
+
+@media screen and (max-width: 800px){
+    .contacto__contenido {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .contacto__contenido__empresa {
+        width: auto;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__contenido__empresa__superior__logo img {
+        width: 90px;
+    }
+    .contacto__contenido__empresa__superior__logo {
+        margin-right: 3.5%;
+    }
+    .contacto__contenido__empresa__superior__info {
+        align-items: flex-end;
+    }
+    .contacto__contenido__empresa__superior__info div i{
+        margin-right: 5px;
+    }
+    .contacto__contenido__formulario{
+        margin-top: 5%;
+    }
 }
