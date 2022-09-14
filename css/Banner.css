@@ -2,7 +2,7 @@
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     height: calc(100vh + 100px);
     clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
@@ -54,7 +54,7 @@
             -webkit-text-stroke: 0.5px black;
         }   
         #apellido-secundario{
-            color: gray;
+            color: gainsboro;
             font-family: 'Montserrat', sans-serif;
             font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
         }
@@ -90,6 +90,10 @@
         }
 
 @media screen and (max-width: 480px){
+    .contenedor__principal__banner{
+        background-attachment: fixed;
+        background-size: 450%;
+    }
     .nombre-organizacion{
         justify-content: space-evenly;
     }
