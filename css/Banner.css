@@ -2,7 +2,7 @@
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     height: calc(100vh + 100px);
     clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);

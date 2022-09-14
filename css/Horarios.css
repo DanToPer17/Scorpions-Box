@@ -1,10 +1,10 @@
-.contenedor-horarios{
+.contenedor__horarios{
     display: flex;
     flex-direction: column;
     width: auto;
     padding: 125px 10% 0px 10%;
     height: 90vh;
-    background: linear-gradient(to bottom, #fe3c00, #000000);
+    background: linear-gradient(to bottom, #FE3C00, #202122);
 }
 .titulo__horarios__contenedor{
     display: flex;
