@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 125px 10% 0px 10%;
-    background: radial-gradient(circle at right, #DCDCDC , #808080);
+    background: linear-gradient(to bottom, #808080, #FE3C00);
     height: 90vh;
     overflow:hidden;
 }

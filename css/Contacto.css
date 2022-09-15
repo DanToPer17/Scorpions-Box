@@ -134,6 +134,9 @@
         margin-right: 5px;
     }
     .contacto__contenido__formulario{
-        margin-top: 5%;
+        margin-top: 15%;
+    }
+    .contacto__contenido__empresa__superior{
+        margin-bottom: 15%;
     }
 }
