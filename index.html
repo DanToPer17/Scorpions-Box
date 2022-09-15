@@ -216,25 +216,32 @@
                                 </div>
                             </map> 
                         </div>
-                        <form class="contacto__contenido__formulario">
+                        <form class="contacto__contenido__formulario" action="https://formsubmit.co/scorpions.box.2021@gmail.com" method="POST">
                             <div class="formulario__entrada" data-aos="zoom-in" data-aos-duration="500">
                                 <label for="nombreApellido" class="label-contacto">Nombre y Apellido</label>
-                                <input type="text" id="nombreApellido" class="input-estandar" required><br>
+                                <input type="text" name="name" id="nombreApellido" class="input-estandar" required><br>
+                                
                                 <label for="correoElectronico" class="label-contacto">Correo Electrónico</label>
-                                <input type="email" id="correoElectronico" class="input-estandar" required placeholder="email@dominio.com"><br>
+                                <input type="email" name="mail" id="correoElectronico" class="input-estandar" required placeholder="email@dominio.com"><br>
+                                
                                 <label for="telefono" class="label-contacto">Teléfono</label>
-                                <input type="tel" id="telefono" class="input-estandar" required placeholder="(+xx) xxxx xxxx"><br>
+                                <input type="tel" name="phone" id="telefono" class="input-estandar" required placeholder="(+xx) xxxx xxxx"><br>
+                                
                                 <label for="mensaje" class="label-contacto">Mensaje</label>
-                                <textarea cols="70" rows="10" id="mensaje" class="input-estandar" required></textarea><br>
+                                <textarea cols="70" name="message" rows="10" id="mensaje" class="input-estandar" required></textarea><br>
+                            </div>
+                            <div>
+                                <input type="submit" value="Enviar" class="enviar">
+                                <input type="hidden" name="_next" value="https://dantoper17.github.io/Scorpions-Box/#Contacto">
+                                <input type="hidden" name="_captcha" value="false">
                             </div>
                         </form>
                     </div>
-                    
                 </div>
-
             </section>
         </main>
         <footer>
+            <h1>pie de pagina</h1>
         </footer>
         <script src="js/index.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
