@@ -1,0 +1,48 @@
+footer{
+    background: #202122;
+    color: gray;
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0;
+}
+footer div h1{
+    color: #FFFFFF;
+    font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    font-weight: 900;
+}
+footer div p{
+    color: gray;
+    font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    letter-spacing: 28px;
+    font-weight: 400;
+}
+footer div span{
+    color: gray;
+    font-size: 1.5rem;
+}
+.redesSociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redesSociales img{
+    width: 1.5%;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .redesSociales img{
+        width: 10%;
+    }
+}
