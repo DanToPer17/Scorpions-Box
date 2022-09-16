@@ -108,12 +108,15 @@
     border-bottom: 3px solid #FE3C00;
     border-radius: 0;
 }
-
-
+.btn__enviar{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .enviar{
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    width: 40%;
+    width: 50%;
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
@@ -159,5 +162,8 @@
     }
     .contacto__contenido__empresa__superior{
         margin-bottom: 15%;
+    }
+    .enviar{
+        width: 70%;
     }
 }

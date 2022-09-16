@@ -65,6 +65,18 @@ footer div{
         text-transform: uppercase;
     }
 
+.derechos__reservados{
+    color: #FFFFFF;
+    background: #202122;
+    width: 100%;
+    display: flex;
+}
+.derechos__reservados h1{
+    letter-spacing: 0px;
+    font-size: 0.7rem;
+    width: 100%;
+}
+
 @media screen and (max-width: 800px){
 
     footer div h1{
@@ -91,5 +103,13 @@ footer div{
     .redesSociales__cuenta h1{
         color: #FE3C00;
         font-size: 0.9rem;
+    }
+    .derechos__reservados h1{
+        letter-spacing: 0px;
+        font-size: 0.7rem;
+        width: 100%;
+    }
+    .derechos__reservados h1{
+        font-size: 0.6rem;
     }
 }

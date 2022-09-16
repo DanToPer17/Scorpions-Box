@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/BarraNavegacion.css">
     <link rel="stylesheet" href="css/Banner.css">
     <link rel="stylesheet" href="css/Nosotros.css">
-    <link rel="stylesheet" href="css/Cards.css">
+    <link rel="stylesheet" href="css/Servicios.css">
     <link rel="stylesheet" href="css/Coachs.css">
     <link rel="stylesheet" href="css/Horarios.css">
     <link rel="stylesheet" href="css/Contacto.css">
@@ -231,7 +231,7 @@
                                 <label for="mensaje" class="label-contacto">Mensaje</label>
                                 <textarea cols="70" name="message" rows="10" id="mensaje" class="input-estandar" required></textarea><br>
                             </div>
-                            <div>
+                            <div class="btn__enviar"> 
                                 <input type="submit" value="Enviar" class="enviar">
                                 <input type="hidden" name="_next" value="https://dantoper17.github.io/Scorpions-Box/#Contacto">
                                 <input type="hidden" name="_captcha" value="false">
@@ -243,20 +243,25 @@
         </main>
         <footer>
             <div>
-                <h1>¡Únete a la familia Scorpions!</h1>
+                <div>
+                    <h1>¡Únete a la familia Scorpions!</h1>
+                </div>
+                <div class="redesSociales">
+                    <p>Síguenos</p>
+                    <span>En nuestras redes sociales</span>
+                    <div class="redesSociales__iconos">
+                        <a href="https://www.youtube.com/channel/UCMOaPm-bOl5lLWVWDq_tl_Q"><img src="img/footer/youtube.png" alt=""></a>
+                        <a href="https://www.instagram.com/scorpionsbox/"><img src="img/footer/instagram.png" alt=""></a>
+                        <a href="https://wa.me/message/RNMPOKKTN3J4K1"><img src="img/footer/whatsapp.png" alt=""></a>
+                    </div> 
+                </div>
+                <div class="redesSociales__cuenta">
+                    <h1>@ScorpionsBox</h1>
+                </div>
             </div>
-            <div class="redesSociales">
-                <p>Siguenos</p>
-                <span>En nuestras redes sociales</span>
-                <div class="redesSociales__iconos">
-                    <a href="https://www.youtube.com/channel/UCMOaPm-bOl5lLWVWDq_tl_Q"><img src="img/footer/youtube.png" alt=""></a>
-                    <a href="https://www.instagram.com/scorpionsbox/"><img src="img/footer/instagram.png" alt=""></a>
-                    <a href="https://wa.me/message/RNMPOKKTN3J4K1"><img src="img/footer/whatsapp.png" alt=""></a>
-                </div> 
-            </div>
-            <div class="redesSociales__cuenta">
-                <h1>@ScorpionsBox</h1>
-            </div>
+            <div class="derechos__reservados">
+                <h1>©2022 Scorpion's Box. Todos los derechos reservados.</h1>
+            </div>    
         </footer>
         <script src="js/index.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
