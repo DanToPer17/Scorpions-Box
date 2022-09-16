@@ -4,7 +4,7 @@ footer{
     display: flex;
     width: 100%;
     padding: 10px 0px;
-    height: 250px;
+    height: 300px;
     flex-direction: column;
     align-items: center;
 }
@@ -13,36 +13,83 @@ footer div{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin: 25px 0;
 }
-footer div h1{
-    color: #FFFFFF;
-    font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
-    font-weight: 900;
-}
-footer div p{
-    color: gray;
-    font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-    letter-spacing: 28px;
-    font-weight: 400;
-}
-footer div span{
-    color: gray;
-    font-size: 1.5rem;
-}
-.redesSociales{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.redesSociales img{
-    width: 1.5%;
-    margin-right: 15px;
-}
+    footer div h1{
+        color: #FFFFFF;
+        font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+        font-weight: 900;
+        letter-spacing: 7px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        text-align: center; 
+    }
+    .redesSociales{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redesSociales p{
+        color: gray;
+        font-size: 1.8rem;
+        letter-spacing: 7px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .redesSociales span{
+        color: gray;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    .redesSociales__iconos{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .redesSociales__iconos a{
+        display: flex;
+        width: 22.5%;
+        justify-content: center;
+    }
+    .redesSociales__iconos a img{
+        width: 50%;
+    }
+    .redesSociales__cuenta{
+        display: flex;
+        font-family: 'Alfa Slab One', sans-serif;
+        height: 30px;  
+    }
+    .redesSociales__cuenta h1{
+        color: #FE3C00;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
 
 @media screen and (max-width: 800px){
-    .redesSociales img{
-        width: 10%;
+
+    footer div h1{
+        font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+        letter-spacing: 3.5px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .redesSociales p{
+        font-size: 1.8rem;
+        letter-spacing: 3.5px;
+    }
+    .redesSociales span{
+        color: gray;
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+    }
+    .redesSociales__iconos a{
+        width: 20%;
+    }
+    .redesSociales__iconos a img{
+        width: 50%;
+    }
+    .redesSociales__cuenta h1{
+        color: #FE3C00;
+        font-size: 0.9rem;
     }
 }
