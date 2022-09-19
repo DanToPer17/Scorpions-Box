@@ -1,0 +1,112 @@
+.contenedor__planes{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 125px 10% 0px 10%;
+    height: 90vh;
+    background: linear-gradient(to bottom, #FE3C00, #202122);
+    display: flex;
+    flex-direction: column;
+    padding: 125px 10% 0px 10%;
+    background: #202122;
+    height: auto;
+    overflow:hidden;
+}
+
+.titulo__planes__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+    .titulo__principal__4-1{
+        font-family: 'Raleway', sans-serif;
+        font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem); 
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: bold;
+        color: gray;
+    }
+    .titulo__principal__4-2{
+        text-transform: uppercase;
+        font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        font-weight: 900;
+    }
+    #Planes .elemento-divisor{
+        border-bottom: #FE3C00;
+        border-radius: 3px;
+        border-style: solid;
+        padding-top: 15px;
+        position: relative;
+        width: 270px;
+        right: -70px
+    }
+    .card__list__planes{
+        display: flex;
+        padding: 5% 10%;
+    }
+    .card__list__planes li{
+        margin: 15px;
+        height: 450px;
+        width: 33.33%;
+        box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 20%);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .card__list__planes li h1{
+        font-family: 'Alfa Slab One', sans-serif;
+        font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+        color: #FFFFFF;
+    }
+    .planes__n1 {
+        background: radial-gradient(circle at right bottom, #202122 , gray);
+    }
+    .planes__n2{
+        background-image: linear-gradient(to right top, #FE3C00, rgb(255, 140, 0));
+        position: relative;
+        top: -50px;
+    }
+    .planes__n3{
+        background: radial-gradient(circle at right bottom, #202122 , gray);
+    }
+
+    @media screen and (max-width: 1303px){
+        .card__list__planes li h1{
+            color: #FFFFFF;
+            font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+        }
+    }
+    @media screen and (max-width: 800px){
+        .card__list__planes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+        .planes__n2{
+            background-image: linear-gradient(to right top, #FE3C00, rgb(255, 140, 0));
+            position:initial;
+            top: 0px;
+        }
+        .card__list__planes li {
+            margin: 15px;
+            height: 300px;
+            width: 100%;
+            box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 20%);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .card__list__planes li h1{
+            font-family: 'Alfa Slab One', sans-serif;
+            font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+            color: #FFFFFF;
+        }
+    }
