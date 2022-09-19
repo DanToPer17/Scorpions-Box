@@ -93,7 +93,6 @@
                     text-decoration: none;
                     color: #FFFFFF;
                 }
-
 .formulario__entrada{
     display: flex;
     flex-direction: column;
@@ -138,7 +137,6 @@
         flex-direction: column;
         width: auto;
     }
-
     .contacto__contenido__empresa {
         width: auto;
         justify-content: space-evenly;
