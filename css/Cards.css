@@ -1,7 +1,9 @@
 .contenedor__cards{
-    background: gray;
     display: flex;
-  }
+    overflow: hidden;
+    position: relative;
+    background: gray;
+}
   .card {
     padding: 10px;
     width: 50%;
