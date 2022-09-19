@@ -41,6 +41,8 @@
     transition: transform 0.3s;
   }
   .card .data .content {
+    background: linear-gradient(to right, #fe3c00, #fd4f00, #fc5f00, #fa6d00, #f97904);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
     padding: 1em;
     position: relative;
     z-index: 1;
@@ -48,6 +50,8 @@
   .card .text {
     height: 70px;
     margin: 0;
+    margin-top: 20px;
+    text-align: center;
   }
   .card .wrapper:hover .menu-content span {
     transform: translate(-50%, -10px);
@@ -66,9 +70,9 @@
     color: #fff;
     transform: translateY(calc(70px + 4em));
   }
-
-
-
+  .content .button{
+    text-decoration: none;
+  }
   .card .button {
     display: block;
     width: 100px;
