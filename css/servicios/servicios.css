@@ -35,7 +35,6 @@
             position: relative;
             width: 270px;
         }
-
 .servicios{
     padding-top: 50px;
     width: 100%;
@@ -46,7 +45,6 @@
         font-weight: lighter;
         font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);  
     }
-
 .container {
 	width: 90%;
 	max-width: 1200px;
@@ -108,11 +106,10 @@
 	right: -50px;
 	top: calc(50% - 20px);
 }
-
 .foto img {
 	width: 100%;
 	vertical-align: top;
-    opacity: 20%;
+    opacity: 10%;
 }
 .foto h1{
 	position: absolute;
@@ -120,12 +117,12 @@
     font-size: 1.5rem;
     text-align: center;
     padding: 10% 7%;
-	font-weight: 900;
+	font-weight: 700;
+	color: #FE3C00;
 }
 .evento:nth-child(even) {
 	flex-direction: row-reverse;
 }
-
 .evento:nth-child(even) .especialidad {
 	justify-content: end;
 }
